@@ -1,0 +1,2231 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1E73BE">
+
+  <title>Wollaston Spinal Health | Chiropractic & IDD Therapy Stourbridge</title>
+  <meta name="description" content="Discover chiropractic, IDD spinal decompression, sports therapy and massage at Wollaston Spinal Health in Stourbridge. Contact our team to arrange a consultation.">
+  <link rel="canonical" href="https://www.wollastonspinalhealth.co.uk/">
+
+  <meta property="og:title" content="Wollaston Spinal Health | Stourbridge">
+  <meta property="og:description" content="Chiropractic, IDD spinal decompression, sports therapy and massage in Stourbridge.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wollastonspinalhealth.co.uk/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1E73BE;
+      --primary-dark: #15558D;
+      --primary-light: #DCECF8;
+      --secondary: #63ADD8;
+      --secondary-dark: #317FAE;
+      --secondary-light: #EAF5FB;
+      --accent: #E7A64B;
+
+      --heading: #142B3D;
+      --text: #34495A;
+      --muted: #5B6F7F;
+
+      --background: #FFFFFF;
+      --background-alt: #F5F8FA;
+      --surface: #FFFFFF;
+      --border: #DCE5EC;
+      --border-strong: #AFC2D1;
+
+      --font-heading: "Sora", sans-serif;
+      --font-body: "Source Sans 3", sans-serif;
+
+      --container: 1280px;
+      --gutter: 24px;
+      --section-space: clamp(70px, 8vw, 110px);
+
+      --radius-sm: 12px;
+      --radius-md: 22px;
+      --radius-lg: 32px;
+
+      --shadow: 0 18px 55px rgba(20,43,61,.09);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--background);
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 2 * var(--gutter)));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-space);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      font: 600 14px var(--font-heading);
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 25px;
+      height: 2px;
+      background: var(--secondary);
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      line-height: 1.16;
+      letter-spacing: -.045em;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5.7vw, 72px);
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4.1vw, 52px);
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+      margin-top: 16px;
+    }
+
+    .section-heading p {
+      margin-top: 18px;
+      color: var(--muted);
+      max-width: 670px;
+    }
+
+    .button {
+      min-height: 55px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 23px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      font: 600 15px var(--font-heading);
+      transition: .25s ease;
+    }
+
+    .button-primary {
+      color: white;
+      background: var(--primary);
+      box-shadow: 0 10px 24px rgba(30,115,190,.2);
+    }
+
+    .button-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      color: var(--heading);
+      background: white;
+      border-color: var(--border-strong);
+    }
+
+    .button-outline:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .arrow {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    /* IMAGE HANDLING */
+
+    .image-frame {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+      border-radius: var(--radius-lg);
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .image-frame img[hidden] {
+      display: none;
+    }
+
+    .image-frame::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, transparent 65%, rgba(20,43,61,.12));
+    }
+
+    .image-fallback {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      text-align: center;
+      color: var(--primary-dark);
+      font: 600 15px var(--font-heading);
+    }
+
+    .image-frame.image-error .image-fallback {
+      display: flex;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(15px);
+    }
+
+    .nav {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      flex-shrink: 0;
+    }
+
+    .brand-symbol {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      color: white;
+      background: var(--primary);
+      font: 700 23px var(--font-heading);
+    }
+
+    .brand-name {
+      color: var(--heading);
+      font: 700 16px/1.25 var(--font-heading);
+    }
+
+    .brand-name small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(15px, 2vw, 27px);
+    }
+
+    .nav-links a {
+      color: var(--text);
+      font: 500 14px var(--font-heading);
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .button {
+      min-height: 46px;
+      padding: 10px 18px;
+      font-size: 13px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 45px;
+      height: 45px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      color: var(--heading);
+      background: white;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding-block: 70px;
+      background:
+        radial-gradient(ellipse at 85% 15%, rgba(99,173,216,.24), transparent 35%),
+        linear-gradient(120deg, #F7FAFC, #EAF4FB);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .hero-copy h1 {
+      margin-top: 22px;
+    }
+
+    .hero-copy h1 span {
+      display: block;
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 590px;
+      margin-top: 23px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 31px;
+    }
+
+    .hero-proof {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 32px;
+      padding-top: 21px;
+      border-top: 1px solid rgba(21,85,141,.18);
+    }
+
+    .proof-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      border-radius: 50%;
+      color: var(--primary);
+      background: white;
+      font-size: 21px;
+    }
+
+    .hero-proof strong {
+      display: block;
+      color: var(--heading);
+      font: 600 13px var(--font-heading);
+    }
+
+    .hero-proof small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .hero-image {
+      height: 520px;
+      box-shadow: var(--shadow);
+      border-radius: 32px;
+    }
+
+    .hero-image img {
+      object-position: 42% center;
+    }
+
+    .image-label {
+      position: absolute;
+      z-index: 2;
+      left: 20px;
+      bottom: 20px;
+      padding: 13px 17px;
+      border-radius: 12px;
+      color: var(--heading);
+      background: white;
+      font: 600 13px var(--font-heading);
+      box-shadow: var(--shadow);
+    }
+
+    /* CONTACT STRIP */
+
+    .intro-strip {
+      padding-block: 24px;
+      color: white;
+      background: var(--heading);
+    }
+
+    .intro-strip-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .intro-strip p {
+      color: rgba(255,255,255,.85);
+      font-size: 16px;
+    }
+
+    .intro-strip a {
+      color: #A8D9F3;
+      font: 600 14px var(--font-heading);
+      white-space: nowrap;
+    }
+
+    /* APPROACH */
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .approach-image {
+      height: 470px;
+    }
+
+    .approach-copy h2 {
+      margin-top: 17px;
+    }
+
+    .approach-copy > p {
+      margin-top: 20px;
+      color: var(--muted);
+    }
+
+    .approach-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+      margin-top: 28px;
+    }
+
+    .approach-point {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--heading);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary-dark);
+      background: var(--primary-light);
+      font-size: 13px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: var(--background-alt);
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0 25px;
+      margin-top: 50px;
+    }
+
+    .service-item {
+      padding: 27px 16px 32px;
+      border-top: 1px solid var(--border-strong);
+      transition: .25s ease;
+    }
+
+    .service-item:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+    }
+
+    .service-number {
+      color: var(--secondary-dark);
+      font: 600 13px var(--font-heading);
+      letter-spacing: .1em;
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      margin-top: 22px;
+      border-radius: 16px;
+      color: var(--primary);
+      background: white;
+      box-shadow: 0 8px 22px rgba(20,43,61,.06);
+    }
+
+    .service-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .service-item h3 {
+      margin-top: 19px;
+      font-size: 21px;
+    }
+
+    .service-item p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .service-item a {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 16px;
+      color: var(--primary);
+      font: 600 14px var(--font-heading);
+    }
+
+    /* CONDITIONS */
+
+    .conditions-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 70px;
+    }
+
+    .conditions-copy h2 {
+      margin-top: 18px;
+    }
+
+    .conditions-copy p {
+      margin-top: 20px;
+      color: var(--muted);
+    }
+
+    .condition-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .condition-list a {
+      min-height: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--heading);
+      font: 500 15px var(--font-heading);
+    }
+
+    .condition-list a span:last-child {
+      color: var(--primary);
+      font-size: 20px;
+    }
+
+    .condition-list a:hover {
+      color: var(--primary);
+    }
+
+    /* IDD */
+
+    .idd-section {
+      color: white;
+      background: var(--heading);
+    }
+
+    .idd-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .idd-copy .eyebrow {
+      color: #A8D9F3;
+    }
+
+    .idd-copy h2 {
+      margin-top: 18px;
+      color: white;
+    }
+
+    .idd-copy > p {
+      margin-top: 20px;
+      color: rgba(255,255,255,.76);
+    }
+
+    .idd-points {
+      display: grid;
+      gap: 13px;
+      margin-top: 24px;
+    }
+
+    .idd-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: rgba(255,255,255,.9);
+      font-size: 16px;
+    }
+
+    .idd-point span {
+      color: #A8D9F3;
+      font-size: 20px;
+    }
+
+    .idd-copy .button {
+      margin-top: 29px;
+      color: var(--primary-dark);
+      background: white;
+    }
+
+    .idd-image {
+      height: 430px;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    /* JOURNEY */
+
+    .journey {
+      background: var(--secondary-light);
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 45px;
+    }
+
+    .journey-step {
+      padding-top: 20px;
+      border-top: 1px solid rgba(30,115,190,.35);
+    }
+
+    .journey-index {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(30,115,190,.35);
+      border-radius: 50%;
+      color: var(--primary);
+      font: 600 14px var(--font-heading);
+    }
+
+    .journey-step h3 {
+      margin-top: 20px;
+      font-size: 19px;
+    }
+
+    .journey-step p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* TEAM */
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .team-copy h2 {
+      margin-top: 18px;
+    }
+
+    .team-copy p {
+      margin-top: 19px;
+      color: var(--muted);
+    }
+
+    .team-image {
+      height: 390px;
+    }
+
+    .team-highlight {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-top: 25px;
+      padding: 18px;
+      border-left: 3px solid var(--primary);
+      background: var(--background-alt);
+    }
+
+    .team-highlight strong {
+      color: var(--primary);
+      font: 700 30px var(--font-heading);
+      white-space: nowrap;
+    }
+
+    .team-highlight span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* CLINIC PHOTO */
+
+    .clinic-section {
+      padding-top: 0;
+    }
+
+    .clinic-photo {
+      height: 390px;
+      border-radius: var(--radius-lg);
+    }
+
+    .clinic-caption {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* FAQ */
+
+    .faq-section {
+      background: var(--background-alt);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 65px;
+    }
+
+    .faq-intro h2 {
+      margin-top: 17px;
+    }
+
+    .faq-intro p {
+      margin-top: 18px;
+      color: var(--muted);
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+      border: 0;
+      color: var(--heading);
+      background: transparent;
+      text-align: left;
+      font: 600 16px var(--font-heading);
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      color: var(--primary);
+      font-size: 23px;
+      transition: transform .2s;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 30px 22px 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .faq-item.open .faq-question span:last-child {
+      transform: rotate(45deg);
+    }
+
+    /* CTA */
+
+    .contact-cta {
+      padding-block: 90px;
+      color: white;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(99,173,216,.22), transparent 35%),
+        var(--primary);
+      text-align: center;
+    }
+
+    .contact-cta .eyebrow {
+      color: #D9F0FC;
+    }
+
+    .contact-cta .eyebrow::before {
+      background: white;
+    }
+
+    .contact-cta h2 {
+      max-width: 760px;
+      margin: 19px auto 0;
+      color: white;
+    }
+
+    .contact-cta p {
+      max-width: 620px;
+      margin: 18px auto 0;
+      color: rgba(255,255,255,.86);
+    }
+
+    .contact-cta .button {
+      margin-top: 28px;
+      color: var(--primary-dark);
+      background: white;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 65px;
+    }
+
+    .contact-intro h2 {
+      margin-top: 18px;
+    }
+
+    .contact-intro > p {
+      margin-top: 18px;
+      color: var(--muted);
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+    }
+
+    .contact-marker {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: var(--primary);
+      background: var(--primary-light);
+      font-size: 19px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--heading);
+      font: 600 14px var(--font-heading);
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-panel {
+      padding: 35px;
+      border-radius: var(--radius-lg);
+      background: var(--background-alt);
+    }
+
+    .contact-panel h3 {
+      margin-top: 15px;
+      font-size: 26px;
+    }
+
+    .contact-panel > p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .consultation-info {
+      display: grid;
+      gap: 13px;
+      margin-top: 25px;
+    }
+
+    .consultation-info div {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+    }
+
+    .consultation-info strong {
+      color: var(--heading);
+    }
+
+    .consultation-info span {
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .contact-panel .button {
+      width: 100%;
+      margin-top: 23px;
+    }
+
+    .contact-panel .button + .button {
+      margin-top: 11px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding-block: 45px 25px;
+      color: white;
+      background: var(--heading);
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,.16);
+    }
+
+    .footer .brand-name {
+      color: white;
+    }
+
+    .footer .brand-name small {
+      color: rgba(255,255,255,.65);
+    }
+
+    .footer-description {
+      max-width: 390px;
+      margin-top: 15px;
+      color: rgba(255,255,255,.7);
+      font-size: 15px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 24px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.85);
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #A8D9F3;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 22px;
+      color: rgba(255,255,255,.6);
+      font-size: 13px;
+    }
+
+    .footer-bottom a {
+      color: #A8D9F3;
+    }
+
+    /* MOBILE STICKY ACTIONS: EXACTLY TWO BUTTONS */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* REVEAL */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+
+      *, *::before, *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* TABLET */
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .hero-grid {
+        gap: 30px;
+      }
+
+      .hero-image {
+        height: 430px;
+      }
+
+      .approach-grid,
+      .conditions-grid,
+      .idd-grid,
+      .team-grid,
+      .faq-layout,
+      .contact-grid {
+        gap: 38px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .nav {
+        min-height: 74px;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 10px;
+        right: 10px;
+        padding: 15px;
+        border: 1px solid var(--border);
+        border-radius: 17px;
+        background: white;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.open {
+        display: grid;
+        gap: 0;
+      }
+
+      .nav-links a {
+        padding: 13px 8px;
+        border-bottom: 1px solid var(--border);
+        font-size: 15px;
+      }
+
+      .nav-links a:last-child {
+        border-bottom: 0;
+      }
+
+      .nav-actions .button {
+        display: none;
+      }
+
+      .hero-grid,
+      .approach-grid,
+      .conditions-grid,
+      .idd-grid,
+      .team-grid,
+      .faq-layout,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        height: 430px;
+      }
+
+      .approach-image {
+        height: 390px;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .journey-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .idd-image {
+        height: 370px;
+      }
+
+      .team-image {
+        height: 360px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 560px) {
+      :root {
+        --gutter: 10px;
+        --section-space: 62px;
+      }
+
+      body {
+        font-size: 17px;
+      }
+
+      .brand-name {
+        font-size: 14px;
+      }
+
+      .brand-symbol {
+        width: 39px;
+        height: 39px;
+      }
+
+      .hero {
+        padding-block: 50px 35px;
+      }
+
+      .hero-copy h1 {
+        font-size: clamp(39px, 10vw, 48px);
+      }
+
+      .hero-description {
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .hero-image {
+        height: 340px;
+      }
+
+      .intro-strip-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .intro-strip a {
+        white-space: normal;
+      }
+
+      .approach-image {
+        height: 300px;
+      }
+
+      .approach-points {
+        grid-template-columns: 1fr;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+      }
+
+      .service-item {
+        min-height: 0;
+        padding-block: 24px;
+      }
+
+      .condition-list {
+        grid-template-columns: 1fr;
+      }
+
+      .idd-image {
+        height: 280px;
+      }
+
+      .journey-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 15px;
+      }
+
+      .journey-step h3 {
+        font-size: 18px;
+      }
+
+      .team-image {
+        height: 270px;
+      }
+
+      .clinic-photo {
+        height: 250px;
+      }
+
+      .contact-panel {
+        padding: 24px 17px;
+      }
+
+      .consultation-info div {
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .consultation-info span {
+        text-align: left;
+      }
+
+      .footer-links {
+        gap: 14px 19px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 9px;
+      }
+
+      .contact-cta {
+        padding-block: 70px;
+      }
+
+      body {
+        padding-bottom: calc(82px + env(safe-area-inset-bottom));
+      }
+
+      .mobile-cta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        position: fixed;
+        z-index: 200;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 11px 10px calc(11px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97);
+        border-top: 1px solid var(--border);
+        box-shadow: 0 -8px 25px rgba(20,43,61,.1);
+      }
+
+      .mobile-cta .button {
+        min-height: 51px;
+        padding: 10px 7px;
+        border-radius: 12px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      .mobile-cta .button-outline {
+        color: var(--primary-dark);
+        background: var(--primary-light);
+        border-color: transparent;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Chiropractic",
+    "name": "Wollaston Spinal Health",
+    "url": "https://www.wollastonspinalhealth.co.uk/",
+    "telephone": "+44-1384-443999",
+    "email": "reception@wollaston-chiropractic-clinic.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11 Church Street",
+      "addressLocality": "Stourbridge",
+      "addressRegion": "West Midlands",
+      "postalCode": "DY8 1LT",
+      "addressCountry": "GB"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a href="#home" class="brand" aria-label="Wollaston Spinal Health homepage">
+      <span class="brand-symbol">W</span>
+      <span class="brand-name">
+        WOLLASTON
+        <small>Spinal Health</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+      <a href="#approach">Our Approach</a>
+      <a href="#services">Treatments</a>
+      <a href="#conditions">Conditions</a>
+      <a href="#idd">IDD Therapy</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="button button-primary" href="tel:+441384443999">
+        Call the Clinic <span class="arrow">↗</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation">
+        ☰
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO WITH REAL CLINIC PHOTOGRAPH -->
+
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Spinal Health · Stourbridge</span>
+
+        <h1>
+          Move beyond
+          <span>back and neck pain.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover a more considered approach to spinal health.
+          Our team brings together chiropractic care, IDD spinal
+          decompression, sports therapy and massage to help you
+          understand your symptoms and explore suitable treatment.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary"
+             href="mailto:reception@wollaston-chiropractic-clinic.co.uk?subject=New%20Patient%20Consultation">
+            Arrange a Consultation <span class="arrow">↗</span>
+          </a>
+
+          <a class="button button-outline" href="#services">
+            Explore Treatments <span class="arrow">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="proof-icon">✳</div>
+          <div>
+            <strong>Chiropractic and sports therapy under one roof</strong>
+            <small>Individual assessment and treatment planning</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-frame hero-image reveal">
+        <img
+          src="https://www.wollastonspinalhealth.co.uk/wp-content/uploads/2025/08/DSC03809-1-600x600.jpg"
+          alt="Chiropractor discussing spinal anatomy with a patient during a consultation"
+          width="600"
+          height="600"
+          fetchpriority="high"
+          decoding="async"
+          onerror="imageFallback(this)">
+        <div class="image-fallback">Wollaston Spinal Health consultation</div>
+        <div class="image-label">A more considered approach to spinal health</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+
+  <div class="intro-strip">
+    <div class="container intro-strip-inner">
+      <p>Looking for help with back pain, neck pain or sciatica?</p>
+      <a href="tel:+441384443999">Speak with our team · 01384 443999 ↗</a>
+    </div>
+  </div>
+
+  <!-- APPROACH -->
+
+  <section class="section" id="approach">
+    <div class="container approach-grid">
+
+      <div class="image-frame approach-image reveal">
+        <img
+          src="https://www.wollastonspinalhealth.co.uk/wp-content/uploads/2026/10/2.jpg"
+          alt="Clinic practitioner reviewing spinal imaging and anatomy information"
+          width="1000"
+          height="400"
+          loading="lazy"
+          decoding="async"
+          onerror="imageFallback(this)">
+        <div class="image-fallback">Spinal assessment and patient care</div>
+      </div>
+
+      <div class="approach-copy reveal">
+        <span class="eyebrow">More than symptom management</span>
+
+        <h2>Understand the problem. Plan the next step.</h2>
+
+        <p>
+          Back and neck problems can affect how you work, rest and move.
+          At Wollaston Spinal Health, we take time to understand your
+          symptoms, examine your needs and explain the treatment options
+          that may be appropriate.
+        </p>
+
+        <p>
+          Our multidisciplinary team combines chiropractic, sports
+          therapy and massage, with specialist IDD spinal decompression
+          available for suitable patients.
+        </p>
+
+        <div class="approach-points">
+          <div class="approach-point"><span class="check">✓</span> Individual assessments</div>
+          <div class="approach-point"><span class="check">✓</span> Clear treatment planning</div>
+          <div class="approach-point"><span class="check">✓</span> Progress reassessment</div>
+          <div class="approach-point"><span class="check">✓</span> Exercise and lifestyle guidance</div>
+        </div>
+
+        <a class="button button-primary" style="margin-top:30px"
+           href="https://www.wollastonspinalhealth.co.uk/our-team/">
+          Meet the Team <span class="arrow">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES: SIX CUSTOM SVG ICONS, 3 + 3 -->
+
+  <section class="section services" id="services">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">Our treatment options</span>
+        <h2>Different treatments. One focus: your spinal health.</h2>
+        <p>
+          Explore the services available at our Stourbridge clinic.
+          Your practitioner can help establish which approach may
+          be appropriate following an assessment.
+        </p>
+      </div>
+
+      <div class="service-list">
+
+        <article class="service-item reveal">
+          <span class="service-number">01 / CHIROPRACTIC</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M23 5C18 10 18 15 23 19C28 23 28 28 23 32C18 36 18 40 23 44"
+                stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+              <path d="M31 7C26 12 26 17 31 21M31 27C26 32 26 37 31 41"
+                stroke="#63ADD8" stroke-width="2.8" stroke-linecap="round"/>
+              <path d="M10 12H17M34 18H41M10 31H17M34 37H41"
+                stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Chiropractic Care</h3>
+          <p>
+            Assessment and hands-on chiropractic care for people
+            experiencing back, neck and related musculoskeletal problems.
+          </p>
+          <a href="https://www.wollastonspinalhealth.co.uk/">Explore chiropractic ↗</a>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-number">02 / SPINAL DECOMPRESSION</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M10 13H38M10 35H38"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 8V18M24 30V40"
+                stroke="#63ADD8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M19 14L24 19L29 14M19 34L24 29L29 34"
+                stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="16" y="20" width="16" height="8" rx="4"
+                stroke="currentColor" stroke-width="2.3"/>
+            </svg>
+          </div>
+          <h3>IDD Spinal Therapy</h3>
+          <p>
+            Specialist computer-controlled spinal decompression
+            using the Accu-SPINA system for suitable patients.
+          </p>
+          <a href="https://www.wollastonspinalhealth.co.uk/html/services/idd-disc-therapy/">Explore IDD therapy ↗</a>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-number">03 / SPORTS THERAPY</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M8 28C13 28 13 14 20 14C27 14 26 34 33 34C37 34 38 25 41 22"
+                stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/>
+              <path d="M8 36C14 36 16 29 22 29C28 29 30 39 36 39"
+                stroke="#63ADD8" stroke-width="2.7" stroke-linecap="round"/>
+              <circle cx="20" cy="14" r="4" fill="#63ADD8"/>
+              <circle cx="33" cy="34" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Sports Therapy</h3>
+          <p>
+            Support for sports injuries, movement difficulties,
+            muscular discomfort and rehabilitation needs.
+          </p>
+          <a href="https://www.wollastonspinalhealth.co.uk/our-team/">Explore sports therapy ↗</a>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-number">04 / MASSAGE</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M9 25C14 18 20 17 24 23C28 29 34 28 39 21"
+                stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/>
+              <path d="M11 33C16 27 21 27 25 32C29 37 35 36 39 30"
+                stroke="#63ADD8" stroke-width="2.7" stroke-linecap="round"/>
+              <path d="M17 12L20 8M29 12L32 8M23 8V4"
+                stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Sports Massage</h3>
+          <p>
+            Massage treatment and soft tissue care to support relaxation,
+            recovery and muscular comfort.
+          </p>
+          <a href="https://www.wollastonspinalhealth.co.uk/our-team/">Meet our therapy team ↗</a>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-number">05 / ASSESSMENT</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="10" y="7" width="28" height="34" rx="5"
+                stroke="currentColor" stroke-width="2.5"/>
+              <path d="M17 17H31M17 24H26M17 31H28"
+                stroke="#63ADD8" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="32" cy="31" r="5" fill="white"
+                stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Functional Assessment</h3>
+          <p>
+            Physical examinations and functional tests to help assess
+            symptoms and monitor relevant changes in progress.
+          </p>
+          <a href="https://www.wollastonspinalhealth.co.uk/what-to-expect-at-the-chiropractic-consultation-and-report-of-findings/">What to expect ↗</a>
+        </article>
+
+        <article class="service-item reveal">
+          <span class="service-number">06 / REHABILITATION</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M9 35C14 28 17 19 24 19C31 19 34 28 39 13"
+                stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/>
+              <path d="M31 13H39V21"
+                stroke="currentColor" stroke-width="2.7"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 39H39"
+                stroke="#63ADD8" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="19" r="4" fill="#63ADD8"/>
+            </svg>
+          </div>
+          <h3>Exercise & Rehabilitation</h3>
+          <p>
+            Structured exercise, strengthening and lifestyle guidance
+            to support movement and longer-term spinal health.
+          </p>
+          <a href="https://www.wollastonspinalhealth.co.uk/">Discuss your care ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS -->
+
+  <section class="section" id="conditions">
+    <div class="container conditions-grid">
+
+      <div class="conditions-copy reveal">
+        <span class="eyebrow">Problems we help assess</span>
+        <h2>What is affecting the way you move?</h2>
+        <p>
+          Spinal and musculoskeletal symptoms can have different
+          causes. An appropriate assessment helps establish what
+          may be contributing to your discomfort and what options
+          are worth considering.
+        </p>
+
+        <a class="button button-primary" style="margin-top:27px"
+           href="tel:+441384443999">
+          Talk to Our Team <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="condition-list reveal">
+        <a href="tel:+441384443999"><span>Lower back pain</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Neck pain</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Sciatica</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Disc bulges</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Leg pain</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Sports injuries</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Headaches</span><span>↗</span></a>
+        <a href="tel:+441384443999"><span>Migraines</span><span>↗</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IDD THERAPY WITH REAL IMAGE -->
+
+  <section class="section idd-section" id="idd">
+    <div class="container idd-grid">
+
+      <div class="idd-copy reveal">
+        <span class="eyebrow">Specialist spinal treatment</span>
+        <h2>Discover IDD spinal decompression therapy.</h2>
+
+        <p>
+          For some people experiencing persistent disc-related
+          problems, specialist treatment options may be worth
+          exploring. Wollaston Spinal Health offers IDD therapy
+          using the Accu-SPINA system.
+        </p>
+
+        <div class="idd-points">
+          <div class="idd-point"><span>↗</span> Computer-controlled spinal decompression</div>
+          <div class="idd-point"><span>↗</span> Targeted spinal segment mobilisation</div>
+          <div class="idd-point"><span>↗</span> Assessment of individual suitability</div>
+          <div class="idd-point"><span>↗</span> Treatment planning and progress monitoring</div>
+        </div>
+
+        <a class="button"
+           href="https://www.wollastonspinalhealth.co.uk/html/services/idd-disc-therapy/">
+          Understand IDD Therapy <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="image-frame idd-image reveal">
+        <img
+          src="https://www.wollastonspinalhealth.co.uk/wp-content/uploads/2026/10/4.jpg"
+          alt="Spinal MRI image being reviewed as part of a clinical assessment"
+          width="1000"
+          height="430"
+          loading="lazy"
+          decoding="async"
+          onerror="imageFallback(this)">
+        <div class="image-fallback">Spinal assessment and imaging</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PATIENT JOURNEY -->
+
+  <section class="section journey">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">Your first steps</span>
+        <h2>A clearer path to understanding your treatment options.</h2>
+        <p>
+          Knowing what happens next can make contacting a clinic
+          feel easier. Here is how to begin.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+
+        <article class="journey-step reveal">
+          <div class="journey-index">01</div>
+          <h3>Get in touch</h3>
+          <p>
+            Call or email the clinic and request a new patient consultation.
+          </p>
+        </article>
+
+        <article class="journey-step reveal">
+          <div class="journey-index">02</div>
+          <h3>Initial assessment</h3>
+          <p>
+            Discuss your medical history and undergo an appropriate physical examination.
+          </p>
+        </article>
+
+        <article class="journey-step reveal">
+          <div class="journey-index">03</div>
+          <h3>Understand your options</h3>
+          <p>
+            Your practitioner explains the findings and discusses suitable treatment options.
+          </p>
+        </article>
+
+        <article class="journey-step reveal">
+          <div class="journey-index">04</div>
+          <h3>Plan your care</h3>
+          <p>
+            Where appropriate, agree on a treatment approach and relevant progress reviews.
+          </p>
+        </article>
+
+      </div>
+
+      <p style="margin-top:30px;color:var(--muted);font-size:15px">
+        The consultation and treatment approach will depend on individual clinical needs.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- TEAM WITH REAL TEAM PHOTOGRAPH -->
+
+  <section class="section" id="team">
+    <div class="container team-grid">
+
+      <div class="team-copy reveal">
+        <span class="eyebrow">People behind your care</span>
+        <h2>Different expertise. A shared focus on spinal health.</h2>
+
+        <p>
+          Wollaston Spinal Health brings together chiropractic,
+          sports therapy and massage expertise. This multidisciplinary
+          approach gives patients access to different forms of care
+          within one clinic.
+        </p>
+
+        <p>
+          Principal Chiropractor and business owner Oliver Crawford
+          has over 27 years of chiropractic experience.
+        </p>
+
+        <div class="team-highlight">
+          <strong>27+</strong>
+          <span>
+            Years of chiropractic experience reported by
+            principal chiropractor Oliver Crawford.
+          </span>
+        </div>
+
+        <a class="button button-primary" style="margin-top:26px"
+           href="https://www.wollastonspinalhealth.co.uk/our-team/">
+          Discover Our Team <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="image-frame team-image reveal">
+        <img
+          src="https://www.wollastonspinalhealth.co.uk/wp-content/uploads/2026/10/1.jpg"
+          alt="Wollaston Spinal Health team together at the clinic"
+          width="1000"
+          height="500"
+          loading="lazy"
+          decoding="async"
+          onerror="imageFallback(this)">
+        <div class="image-fallback">Meet the Wollaston Spinal Health team</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLINIC FACILITIES IMAGE -->
+
+  <section class="section clinic-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Our clinic</span>
+        <h2>A welcoming space for your consultation.</h2>
+        <p>
+          Visit Wollaston Spinal Health at 11 Church Street,
+          Stourbridge, for your consultation and treatment appointments.
+        </p>
+      </div>
+
+      <div class="image-frame clinic-photo reveal">
+        <img
+          src="https://www.wollastonspinalhealth.co.uk/wp-content/uploads/2026/10/5.jpg"
+          alt="Interior treatment and consultation space at Wollaston Spinal Health"
+          width="1200"
+          height="450"
+          loading="lazy"
+          decoding="async"
+          onerror="imageFallback(this)">
+        <div class="image-fallback">Wollaston Spinal Health clinic facilities</div>
+      </div>
+
+      <p class="clinic-caption">
+        Clinic photograph sourced from Wollaston Spinal Health's published website.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="section faq-section" id="faq">
+    <div class="container faq-layout">
+
+      <div class="faq-intro reveal">
+        <span class="eyebrow">Useful information</span>
+        <h2>Questions before you get in touch?</h2>
+        <p>
+          A few practical details about contacting Wollaston
+          Spinal Health and arranging an initial consultation.
+        </p>
+      </div>
+
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I book a new patient consultation?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            Call 01384 443999 or email
+            reception@wollaston-chiropractic-clinic.co.uk
+            and ask for a new patient consultation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How long is the initial consultation?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            The clinic describes an initial consultation lasting
+            approximately 30–45 minutes, including a medical history
+            and physical examination.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Does the clinic offer IDD spinal decompression?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. The clinic offers IDD spinal decompression using
+            the Accu-SPINA system. A practitioner can assess whether
+            this treatment is suitable for your individual circumstances.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Where is Wollaston Spinal Health located?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            The clinic is located at 11 Church Street, Stourbridge,
+            West Midlands, DY8 1LT.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What are the clinic's opening hours?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-answer">
+            Monday to Friday, 9:00am–7:00pm.
+            Saturday, 9:00am–3:00pm.
+            Sunday, closed.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+
+  <section class="contact-cta">
+    <div class="container reveal">
+      <span class="eyebrow">Start with a conversation</span>
+      <h2>Let's take the first step towards understanding your spinal health.</h2>
+      <p>
+        Contact Wollaston Spinal Health to discuss your symptoms
+        and arrange a new patient consultation.
+      </p>
+      <a class="button" href="tel:+441384443999">
+        Call 01384 443999 <span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-intro reveal">
+        <span class="eyebrow">Visit our clinic</span>
+        <h2>Find us in Stourbridge.</h2>
+        <p>
+          Have a question about chiropractic care, IDD therapy,
+          sports therapy or massage? Our team can help you find
+          the appropriate next step.
+        </p>
+
+        <div class="contact-details">
+
+          <div class="contact-detail">
+            <div class="contact-marker">⌖</div>
+            <div>
+              <strong>Clinic address</strong>
+              <span>11 Church Street, Stourbridge, West Midlands, DY8 1LT</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-marker">☎</div>
+            <div>
+              <strong>Telephone</strong>
+              <a href="tel:+441384443999">01384 443999</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-marker">@</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:reception@wollaston-chiropractic-clinic.co.uk">
+                reception@wollaston-chiropractic-clinic.co.uk
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-marker">◷</div>
+            <div>
+              <strong>Opening hours</strong>
+              <span>Monday–Friday: 9am–7pm</span>
+              <span>Saturday: 9am–3pm</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contact-panel reveal">
+        <span class="eyebrow">New patients</span>
+        <h3>Arrange your first consultation.</h3>
+        <p>
+          To book, contact the clinic by telephone or email and
+          request a new patient consultation.
+        </p>
+
+        <div class="consultation-info">
+          <div>
+            <strong>Consultation length</strong>
+            <span>Approximately 30–45 minutes</span>
+          </div>
+          <div>
+            <strong>Includes</strong>
+            <span>Medical history and physical examination</span>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <span>Stourbridge, DY8 1LT</span>
+          </div>
+        </div>
+
+        <a class="button button-primary"
+           href="mailto:reception@wollaston-chiropractic-clinic.co.uk?subject=New%20Patient%20Consultation&body=Hello%2C%0A%0AI%20would%20like%20to%20arrange%20a%20new%20patient%20consultation.%0A%0APlease%20let%20me%20know%20your%20available%20appointments.%0A%0AThank%20you.">
+          Email to Arrange Consultation <span class="arrow">↗</span>
+        </a>
+
+        <a class="button button-outline"
+           href="tel:+441384443999">
+          Call the Clinic <span class="arrow">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="brand">
+          <span class="brand-symbol">W</span>
+          <span class="brand-name">
+            WOLLASTON
+            <small>Spinal Health</small>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          Chiropractic, IDD spinal decompression, sports therapy
+          and massage in Stourbridge, West Midlands.
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#approach">Our Approach</a>
+        <a href="#services">Treatments</a>
+        <a href="#conditions">Conditions</a>
+        <a href="#idd">IDD Therapy</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Wollaston Spinal Health.</span>
+      <span>11 Church Street, Stourbridge, DY8 1LT.</span>
+      <a href="tel:+441384443999">01384 443999</a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- EXACTLY TWO STICKY MOBILE CTA BUTTONS -->
+
+<div class="mobile-cta" aria-label="Quick contact actions">
+  <a class="button button-primary" href="tel:+441384443999">
+    Call Now
+  </a>
+
+  <a class="button button-outline"
+     href="mailto:reception@wollaston-chiropractic-clinic.co.uk?subject=New%20Patient%20Consultation">
+    Book Consultation
+  </a>
+</div>
+
+<script>
+  // Image fallback: if a remote image cannot be reached,
+  // show the styled fallback rather than a broken-image icon.
+  function imageFallback(img) {
+    img.hidden = true;
+    img.closest(".image-frame").classList.add("image-error");
+  }
+
+  // Also handle images that have already failed before
+  // the script runs.
+  document.querySelectorAll(".image-frame img").forEach(img => {
+    if (img.complete && img.naturalWidth === 0) {
+      imageFallback(img);
+    }
+  });
+
+  // Mobile navigation
+  const menuToggle = document.getElementById("menu-toggle");
+  const navigation = document.getElementById("primary-navigation");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("open");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
+    menuToggle.textContent = isOpen ? "×" : "☰";
+  });
+
+  navigation.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      menuToggle.textContent = "☰";
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+      const item = button.closest(".faq-item");
+      const isOpen = item.classList.toggle("open");
+
+      button.setAttribute("aria-expanded", String(isOpen));
+    });
+  });
+
+  // Scroll reveal animation
+  const revealElements = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12
+    });
+
+    revealElements.forEach(element => observer.observe(element));
+  } else {
+    revealElements.forEach(element => element.classList.add("visible"));
+  }
+
+  // Dynamic copyright year
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
